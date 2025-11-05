@@ -1,0 +1,77 @@
+.market-place {
+    margin-top: 40px;
+
+    .container {
+        header {
+            h2 {
+                font-family: 'Manrope';
+                font-size: 32px;
+                text-align: center;
+            }
+
+            .border {
+                width: 100px;
+                background: $mainColor;
+                height: 4px;
+                margin: auto;
+            }
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+
+                li {
+                    a {
+                        color: #000;
+                    }
+
+                    &.active {
+                        border-bottom: 3px solid $mainColor;
+                    }
+                }
+            }
+        }
+
+        .products {
+            padding: 0;
+            margin: 0;
+
+            @media (max-width:576px) {
+
+                .card {
+
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+
+            .col-lg-3 {
+                margin-top: 30px;
+
+                .card {
+                    border: none;
+                    background: none;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    a {
+                        margin-top: 10px;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 34px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+input[type="range"] {
+    width: 70%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &::-webkit-slider-runnable-track {
+        border-radius: 10px;
+        height: 7px;
+        background-color: $mainColor;
+    }
+
+    &::-webkit-slider-thumb {
+        background: #ffffff;
+        border: 2px solid $mainColor;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        position: relative;
+        top: -4px;
+        -webkit-appearance: none;
+        transition: 200ms;
+
+        &:active {
+            transform: scale(1.5);
+        }
+    }
+}

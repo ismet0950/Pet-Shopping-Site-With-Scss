@@ -1,0 +1,40 @@
+body {
+    background: #EBEAEB !important;
+    transition: all 300ms;
+}
+
+* {
+    box-sizing: border-box !important;
+    font-family: 'Manrope';
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.container {
+    padding: 0px 150px;
+
+    @media (max-width:1399px) {
+        padding: 0;
+    }
+}
+
+.card {
+    background: transparent !important;
+    border: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: #000;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+ul {
+    list-style: none !important;
+    padding: 0 !important;
+}

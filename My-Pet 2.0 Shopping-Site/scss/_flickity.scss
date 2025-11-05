@@ -1,0 +1,24 @@
+.carousel-cell {
+    padding: 0px 30px;
+}
+
+.flickity-prev-next-button {
+    background: $sliderButtonColor;
+    color: $mainColor;
+    width: 34px;
+    height: 34px;
+    border-radius: 10%;
+    @media (max-width:992px) {
+        display: none;
+    }
+
+    &:hover {
+        background: $sliderButtonColor;
+    }
+}
+.previous {
+    left: -65px !important;
+}
+.next {
+    right: -65px !important;
+}

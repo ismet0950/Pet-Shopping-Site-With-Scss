@@ -1,0 +1,35 @@
+.contact-address-section {
+    margin-top: 20px;
+    .container {
+        .row {
+            .col-lg-3 {
+                .card {
+                    padding: 30px 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background: transparent;
+                    border: none;
+                    .image {
+                        padding: 20px 0px;
+                    }
+
+                    .text {
+                        h4 {
+                            text-align: center;
+                            font-size: 33px;
+                            font-weight: 600;
+                        }
+
+                        h5 {
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

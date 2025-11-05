@@ -1,0 +1,47 @@
+.contact-us {
+    margin-top: 90px;
+    margin-bottom: 60px;
+
+    .container {
+        h4 {
+            font-weight: 700;
+            font-size: 36px;
+        }
+
+        .input-section {
+            display: flex;
+            justify-content: start;
+            flex-direction: column;
+
+            input {
+                color: $headerInputColor;
+                border: none;
+                border-radius: 10px;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .small {
+                max-width: 330px;
+                padding: 15px 30px;
+            }
+
+            .large {
+                margin-top: 40px;
+                max-width: 450px;
+                padding: 15px 30px;
+                padding-bottom: 130px;
+            }
+        }
+
+        button {
+            background: $mainColor;
+            border: none;
+            color: #fff;
+            padding: 12px;
+            border-radius: 10px;
+        }
+    }
+}

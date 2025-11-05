@@ -1,0 +1,172 @@
+.search-section {
+    .search {
+        .container {
+            .row {
+                align-items: center;
+                width: 100%;
+
+                @media (max-width:992px) {
+
+                    .col-lg-10 {
+                        flex-direction: column;
+
+                        .search-logo {
+                            display: none !important;
+                        }
+                    }
+                }
+
+                .col-lg-2 {
+                    padding: 0;
+                    // width: 100%;
+
+
+                    @media (max-width:992px) {
+                        margin: 20px 0px;
+
+                        .categories {
+                            display: none;
+                            // justify-content: center;
+                        }
+                    }
+
+                    .categories {
+                        button {
+                            display: flex;
+                            align-items: center;
+                            background: $mainColor;
+                            border: none;
+                            border-radius: 10px;
+                            color: #fff;
+                            padding: 8px 20px;
+                            padding-right: 50px;
+                            letter-spacing: 0.75px;
+
+                            .material-symbols-outlined {
+                                font-size: 20px;
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+
+                .col-lg-10 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0;
+                    // width: 100%;
+
+                    .search_categories {
+                        width: 75%;
+                        margin-left: 40px;
+
+                        form {
+                            display: flex;
+
+                            input {
+                                border-radius: 10px;
+                                border: none;
+                                color: $headerInputColor;
+                                font-size: 16px;
+                                padding: 8px 30px;
+                                width: 100%;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+
+                            .search-button {
+                                background: $mainColor;
+                                border-radius: 10px;
+                                border: none;
+                                color: #fff;
+                                padding: 0px 22px;
+                            }
+                        }
+                    }
+
+                    .search-logo {
+                        @include logo;
+                    }
+                }
+            }
+        }
+    }
+
+    .image {
+        margin-top: 40px;
+
+        .container {
+
+            .image-main {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .contacts-search-image-section {
+                background: url(../img/search-main-image-4.png) center;
+                // max-width: 1020px;
+                width: 100%;
+                min-height: 242.45px;
+                background-size: cover;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+
+                @media (max-width:1200px) {
+                    border-radius: 10px;
+                }
+
+                .text {
+                    color: #fff;
+                    margin-left: 40px;
+
+                    @media (max-width:576px) {
+                        h3 {
+                            font-size: 44px !important;
+                        }
+
+                        h4 {
+                            font-size: 22px !important;
+                        }
+                    }
+
+                    @media (max-width:264px) {
+                        h3 {
+                            font-size: 34px !important;
+                        }
+
+                        h4 {
+                            font-size: 14px !important;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 50px;
+                    }
+
+                    h4 {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .third {
+                background: url(../img/search-main-image-3.png) center !important;
+                border-radius: 10px;
+                background-size: cover;
+
+                .text {
+                    margin-left: 50px;
+                    h4 {
+                        font-weight: 400 !important;
+                        font-size: 28px !important;
+                    }
+                }
+            }
+        }
+    }
+}

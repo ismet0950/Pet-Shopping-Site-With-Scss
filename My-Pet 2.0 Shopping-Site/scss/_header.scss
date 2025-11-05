@@ -1,0 +1,156 @@
+@import "./mixin";
+
+header {
+    padding: 25px 0px;
+
+    @media (max-width:575px) {
+        .container {
+            .row {
+                padding: 0px 20px;
+            }
+        }
+    }
+
+    .container {
+        .row {
+            width: 100%;
+
+            @media (max-width:992px) {
+                justify-content: space-between !important;
+
+                .col-lg-6 {
+                    display: none;
+                }
+
+                .col-button {
+                    display: none;
+                }
+
+                .menu-section {
+                    .menu {
+                        .material-symbols-outlined {
+                            display: inline-block !important;
+                        }
+                    }
+                }
+            }
+
+            .col-lg-3 {
+                width: 25%;
+                padding: 0;
+
+                .header-logo {
+                    @include logo;
+                    min-width: 180px;
+                    
+                    span {
+                        cursor: pointer;
+                    }
+                }
+
+                .button-section {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    ul {
+                        display: flex;
+                        margin: 0;
+                        gap: 20px;
+
+                        li {
+                            a {
+                                span {
+                                    height: 13px;
+                                    width: 13px;
+                                    color: #000;
+                                    background: #F4A52F;
+                                    font-size: 10px;
+                                    font-weight: 600;
+                                    border-radius: 50%;
+                                    position: absolute;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                    button {
+                        border: 2px solid #000;
+                        border-radius: 10px;
+                        transform: matrix(1, 0, 0, 1, 0, 0);
+                        padding: 5px 10px;
+                        transition: 300ms;
+
+                        &:hover {
+                            background: #000;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                &:nth-last-child(1) {
+                    display: flex;
+                    align-items: center;
+                    padding: 5px 0px;
+                    // margin-left: 50px;
+
+                    @media (max-width:992px) {
+                        margin: 0 !important;
+                    }
+                }
+            }
+
+            .col-lg-6 {
+                width: 50%;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                // flex: 0;
+
+                .header-menu {
+                    padding: 5px 0px;
+                    display: inline-block;
+
+                    ul {
+                        display: flex;
+                        margin: 0;
+                        gap: 40px;
+
+                        li {
+                            a {
+                                color: #000;
+                                transition: 300ms;
+                                font-weight: 500;
+                                font-size: 15.5px;
+                                font-family: 'Manrope';
+
+
+                                &:hover {
+                                    color: $mainColor;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                @media (max-width:992px) {
+                    display: none;
+                }
+            }
+
+            .menu-section {
+                padding: 0;
+                display: flex;
+                justify-content: end;
+
+                .menu {
+                    .material-symbols-outlined {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

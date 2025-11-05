@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+
+    <!--Icon-->
+    <link rel="icon" href="./img/logo/pet.png">
+
+    <!--Flickity-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.css">
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--Fonts Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+    <!--CSS JS-->
+    <link rel="stylesheet" href="./scss/styles.css">
+    <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header-logo">
+                        <a href="./index.html">
+                            <img src="./img/logo/pet.png" alt="">
+                        </a>
+                        <a href="./index.html"><span>My pet</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header-menu">
+                        <ul>
+                            <li>
+                                <a href="./index.html">Main</a>
+                            </li>
+                            <li>
+                                <a href="./shop.html">Store</a>
+                            </li>
+                            <li>
+                                <a href="./pages.html">Pages</a>
+                            </li>
+                            <li>
+                                <a href="./contacts.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-button">
+                    <div class="button-section">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/svg/heart.png" alt="">
+                                    <span class="notification">1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/svg/shopping-cart.png" alt="">
+                                    <span class="notification">1</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <button>
+                            Sign In
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-person" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 menu-section">
+                    <div id="menu" class="menu">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="./index.html">Main</a></li>
+                <li><a href="./shop.html">Store</a></li>
+                <li><a href="./pages.html">Pages</a></li>
+                <li><a href="./contacts.html">Contacts</a></li>
+                <li><a href="#">Exit</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="search-section">
+        <div class="search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="categories">
+                            <button>
+                                <span class="material-symbols-outlined">
+                                    menu
+                                </span>
+                                Categories
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="search_categories">
+                            <form>
+                                <input type="text" placeholder="All Categories">
+                                <button class="search-button">Search</button>
+                            </form>
+                        </div>
+                        <div class="search-logo">
+                            <a href="./index.html">
+                                <img src="./img/logo/pet.png" alt="">
+                            </a>
+                            <span>My pet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <div class="container">
+                <div class="image-main">
+                    <img src="./img/search-main-image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-info">
+        <div class="product-name">
+            <div class="container">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./img/product/ben-owen-FFwNGYZK-2o-unsplash1.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h3>Product name</h3>
+                        <p class="costs">244 USD</p>
+                        <p>
+                            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet
+                            quam
+                            vehicula elementum sed sit amet dui. Sed porttitor lectus nibh. Vestibulum ac diam sit amet
+                            quam vehicula elementum sed sit amet dui. Proin eget tortor risus.
+                        </p>
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="description-info my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <ul class="d-flex">
+                            <li><a href="#" class="active">Description</a></li>
+                            <li><a href="#">Information</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="product-description">
+        <div class="container">
+            <h3 class="my-4">Product Description</h3>
+            <p>
+                Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Pellentesque in ipsum id orci
+                porta
+                dapibus. Proin eget tortor risus. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac
+                diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada. Vivamus
+                suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor
+                at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit
+                amet quam vehicula elementum sed sit amet dui.
+            </p>
+            <p>
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+                neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.
+            </p>
+
+            <!--! !-------------------! !-->
+
+            <h3 class="footer-h3 mt-5 mb-3">pedigree</h3>
+            <p class="footer-text">
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+                neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Proin eget tortor risus.
+            </p>
+        </div>
+    </div>
+
+    <div class="related-searches">
+        <div class="container">
+            <div class="header">
+                <h3>Similar queries</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./img/sale/max-baskakov-OzAeZPNsLXk-unsplash2.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Bernese <br> Mountain Dog</h3>
+                            <p>299 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./img/product/shane-guymon-KCdYn0xu2fU-unsplash2.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Bernese <br> Mountain Dog</h3>
+                            <p>299 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./img/product/angel-luciano-LATYeZyw88c-unsplash2.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Bernese <br> Mountain Dog</h3>
+                            <p>299 USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./img/sale/alexander-london-mJaD10XeD7w-unsplash2.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <h3>Bernese <br> Mountain Dog</h3>
+                            <p>299 USD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card my-4">
+                        <div class="header-logo my-3">
+                            <a href="./index.html">
+                                <img src="./img/logo/pet.png" alt="">
+                            </a>
+                            <span>My pet</span>
+                        </div>
+                        <ul>
+                            <li class="heading my-1">Address</li>
+                            <li class="text my-1">60-49 Road 11378</li>
+                            <li class="heading my-1">Telephone</li>
+                            <li class="text my-1">+65 11.188.888</li>
+                            <li class="heading my-1">Mail</li>
+                            <li class="text my-1">hello@colorlib.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card my-4">
+                        <h4 class="heading my-3">Join our newsletter now</h4>
+                        <ul>
+                            <li class="text my-2">Receive email updates about our latest <br> store openings and special offers.
+                            </li>
+                        </ul>
+                        <div class="input-section mt-5">
+                            <input type="text" placeholder="Email">
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 useful-links">
+                    <div class="card my-4">
+                        <h4 class="heading my-3">Useful links</h4>
+                        <ul>
+                            <li class="text my-1">About Us</li>
+                            <li class="text my-1">About our store</li>
+                            <li class="text my-1">Safe shopping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

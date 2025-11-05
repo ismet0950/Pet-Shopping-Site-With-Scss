@@ -1,0 +1,166 @@
+.products {
+    .container {
+        .row {
+            padding: 55px 0px;
+
+            .col-lg-3 {
+                .categories-section {
+                    h4 {
+                        font-weight: 700;
+                        font-size: 25px;
+                    }
+
+                    ul {
+                        margin-top: 30px;
+
+                        li {
+                            width: 150px;
+                            border-bottom: 1.5px solid #000;
+                            padding: 10px 0px;
+
+                            @media (max-width:992px) {
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            a {
+                                font-weight: 400;
+                                font-size: 18px;
+                                color: #000;
+                            }
+                        }
+                    }
+
+                    h3 {
+                        margin-top: 30px !important;
+                    }
+
+                    .group-carousel-4 {
+                        margin-top: 20px;
+                        margin-bottom: 40px;
+
+                        .carousel-cell {
+                            padding-left: 0;
+                            padding-right: 40px;
+
+                            .card {
+                                display: flex;
+                                flex-direction: row;
+                                margin-bottom: 20px;
+                                background: transparent;
+                                border: none;
+
+                                .card-image {
+                                    width: 50%;
+
+                                    img {
+                                        width: 100%;
+                                    }
+                                }
+
+                                .card-text {
+                                    width: 50%;
+                                    margin-left: 10px;
+
+                                    h4 {
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+
+                        .previous {
+                            position: relative;
+                            top: -387px !important;
+                            left: 150px !important;
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        .next {
+                            position: relative;
+                            top: -387px !important;
+                            left: 157px !important;
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+            }
+
+            .col-lg-9 {
+                @media (max-width:992px) {
+                    padding: 0;
+                    padding-left: 26px;
+                }
+
+                .header {
+                    border-bottom: 2px solid $mainColor;
+                    max-width: 190px;
+
+                    h4 {
+                        font-weight: 700;
+                        font-size: 30px;
+                        margin-bottom: 3px;
+                        text-align: center;
+                    }
+                }
+
+                .group-carousel-5 {
+                    margin-top: 35px;
+                    .carousel-cell {
+                        .card {
+                            background: transparent;
+                            border: none;
+
+                            .card-text {
+                                h4 {
+                                    font-weight: 700;
+                                    font-size: 23px;
+                                }
+
+                                p {
+                                    &:nth-last-child(1) {
+                                        text-decoration: line-through;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .heading {
+                    h4 {
+                        font-weight: 700;
+                        font-size: 27px;
+                        display: flex;
+                        align-items: center;
+
+                        .material-symbols-outlined {
+                            font-size: 32px;
+                        }
+                    }
+                }
+
+                .grid {
+                    .row {
+                        .col-lg-3 {
+                            @include card;
+                        }
+
+                        .col-lg-4 {
+                            @include card;
+                            margin-bottom: 50px;
+
+                            .card {
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pages</title>
+
+    <!--Icon-->
+    <link rel="icon" href="./img/logo/pet.png">
+
+    <!--Flickity-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.css">
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!--Fonts Google-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+    <!--CSS JS-->
+    <link rel="stylesheet" href="./scss/styles.css">
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/pages.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header-logo">
+                        <a href="./index.html">
+                            <img src="./img/logo/pet.png" alt="">
+                        </a>
+                        <a href="./index.html"><span>My pet</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header-menu">
+                        <ul>
+                            <li>
+                                <a href="./index.html">Main</a>
+                            </li>
+                            <li>
+                                <a href="./shop.html">Store</a>
+                            </li>
+                            <li>
+                                <a href="./pages.html">Pages</a>
+                            </li>
+                            <li>
+                                <a href="./contacts.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-button">
+                    <div class="button-section">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/svg/heart.png" alt="">
+                                    <span class="notification">1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/svg/shopping-cart.png" alt="">
+                                    <span class="notification">1</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <button>
+                            Sign In
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                    class="bi bi-person" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-3 menu-section">
+                    <div id="menu" class="menu">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="./index.html">Main</a></li>
+                <li><a href="./shop.html">Store</a></li>
+                <li><a href="./pages.html">Pages</a></li>
+                <li><a href="./contacts.html">Contacts</a></li>
+                <li><a href="#">Exit</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="search-section">
+        <div class="search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="categories">
+                            <button>
+                                <span class="material-symbols-outlined">
+                                    menu
+                                </span>
+                                Categories
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="search_categories">
+                            <form>
+                                <input type="text" placeholder="All Categories">
+                                <button class="search-button">Search</button>
+                            </form>
+                        </div>
+                        <div class="search-logo">
+                            <a href="./index.html">
+                                <img src="./img/logo/pet.png" alt="">
+                            </a>
+                            <span>My pet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <div class="container">
+                <div class="image-main">
+                    <img src="./img/search-main-image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="categories-section">
+                         <h4>Sections</h4>
+                        <ul>
+                            <li><a href="#">Collars</a></li>
+                            <li><a href="#">Toys</a></li>
+                            <li><a href="#">Bowls</a></li>
+                            <li><a href="#">Leashes</a></li>
+                            <li><a href="#">Beds</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                        <div class="price my-5">
+                            <h4>Price</h4>
+                            <input type="range" min="1" max="20" value=8 data-counter="length-counter"
+                                id="lengthSlider">
+                            <div class="length-counter" id="length-counter">8</div>
+                        </div>
+                        <h3>New</h3>
+                        <div class="group-carousel-4 flickity">
+                            <div class="carousel-cell">
+                                <a href="./product.html">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="./img/product/melanie-andersen-da0u7-jIVrc-unsplash1.png" alt="">
+                                        </div>
+                                        <div class="card-text">
+                                            <h4>Red Ragdoll</h4>
+                                            <p>122 USD</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./product.html">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="./img/product/melanie-andersen-da0u7-jIVrc-unsplash1.png" alt="">
+                                        </div>
+                                        <div class="card-text">
+                                            <h4>Red Ragdoll</h4>
+                                            <p>122 USD</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="./product.html">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="./img/product/melanie-andersen-da0u7-jIVrc-unsplash1.png" alt="">
+                                        </div>
+                                        <div class="card-text">
+                                            <h4>Red Ragdoll</h4>
+                                            <p>122 USD</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="carousel-cell">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="./img/product/melanie-andersen-da0u7-jIVrc-unsplash1.png" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Red Ragdoll</h4>
+                                        <p>122 USD</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="./img/product/melanie-andersen-da0u7-jIVrc-unsplash1.png" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Red Ragdoll</h4>
+                                        <p>122 USD</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="./img/product/melanie-andersen-da0u7-jIVrc-unsplash1.png" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Red Ragdoll</h4>
+                                        <p>122 USD</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-cell">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="./img/product/melanie-andersen-da0u7-jIVrc-unsplash1.png" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Red Ragdoll</h4>
+                                        <p>122 USD</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="./img/product/melanie-andersen-da0u7-jIVrc-unsplash1.png" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Red Ragdoll</h4>
+                                        <p>122 USD</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="./img/product/melanie-andersen-da0u7-jIVrc-unsplash1.png" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4>Red Ragdoll</h4>
+                                        <p>122 USD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="header my-4">
+                        <h4>Sale</h4>
+                    </div>
+                    <div class="group-carousel-5 flickity">
+                        <div class="carousel-cell">
+                            <div class="card">
+                                <a href="./product.html">
+                                    <div class="card-image">
+                                        <img src="./img/sale/kari-shea-FilM6ng7VGQ-unsplash1.png" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4 class="my-2">Bernese <br> Mountain Dog</h4>
+                                        <p>299 USD</p>
+                                        <p>399 USD</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="card">
+                                <a href="./product.html">
+                                    <div class="card-image">
+                                        <img src="./img/sale/max-baskakov-OzAeZPNsLXk-unsplash1.png" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4 class="my-2">Bernese <br> Mountain Dog</h4>
+                                        <p>299 USD</p>
+                                        <p>399 USD</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="card">
+                                <a href="./product.html">
+                                    <div class="card-image">
+                                        <img src="./img/sale/brett-jordan-yhYYCwFr8gM-unsplash1.png" alt="">
+                                    </div>
+                                    <div class="card-text">
+                                        <h4 class="my-2">Bernese <br> Mountain Dog</h4>
+                                        <p>299 USD</p>
+                                        <p>399 USD</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heading mt-5">
+                        <h4>Filter
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </h4>
+                    </div>
+                    <div class="grid">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="./product.html">
+                                        <div class="img-section">
+                                            <img class="image"
+                                                src="./img/product/anastasia-ulyanova-aFqfi1ASUJc-unsplash1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h4>Bernese Mountain Dog</h4>
+                                            <span>299 USD</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="./product.html">
+                                        <div class="img-section">
+                                            <img class="image"
+                                                src="./img/product/anastasia-ulyanova-aFqfi1ASUJc-unsplash1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h4>Bernese Mountain Dog</h4>
+                                            <span>299 USD</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="./product.html">
+                                        <div class="img-section">
+                                            <img class="image"
+                                                src="./img/product/anastasia-ulyanova-aFqfi1ASUJc-unsplash1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h4>Bernese Mountain Dog</h4>
+                                            <span>299 USD</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="./product.html">
+                                        <div class="img-section">
+                                            <img class="image"
+                                                src="./img/product/anastasia-ulyanova-aFqfi1ASUJc-unsplash1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h4>Bernese Mountain Dog</h4>
+                                            <span>299 USD</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="./product.html">
+                                        <div class="img-section">
+                                            <img class="image"
+                                                src="./img/product/anastasia-ulyanova-aFqfi1ASUJc-unsplash1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h4>Bernese Mountain Dog</h4>
+                                            <span>299 USD</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="./product.html">
+                                        <div class="img-section">
+                                            <img class="image"
+                                                src="./img/product/anastasia-ulyanova-aFqfi1ASUJc-unsplash1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h4>Bernese Mountain Dog</h4>
+                                            <span>299 USD</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="./product.html">
+                                        <div class="img-section">
+                                            <img class="image"
+                                                src="./img/product/anastasia-ulyanova-aFqfi1ASUJc-unsplash1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h4>Bernese Mountain Dog</h4>
+                                            <span>299 USD</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="./product.html">
+                                        <div class="img-section">
+                                            <img class="image"
+                                                src="./img/product/anastasia-ulyanova-aFqfi1ASUJc-unsplash1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h4>Bernese Mountain Dog</h4>
+                                            <span>299 USD</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <a href="./product.html">
+                                        <div class="img-section">
+                                            <img class="image"
+                                                src="./img/product/anastasia-ulyanova-aFqfi1ASUJc-unsplash1.png" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h4>Bernese Mountain Dog</h4>
+                                            <span>299 USD</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card my-4">
+                        <div class="header-logo my-3">
+                            <a href="./index.html">
+                                <img src="./img/logo/pet.png" alt="">
+                            </a>
+                            <span>My pet</span>
+                        </div>
+                        <ul>
+                            <li class="heading my-1">Address</li>
+                            <li class="text my-1">60-49 Road 11378</li>
+                            <li class="heading my-1">Telephone</li>
+                            <li class="text my-1">+65 11.188.888</li>
+                            <li class="heading my-1">Mail</li>
+                            <li class="text my-1">hello@colorlib.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card my-4">
+                        <h4 class="heading my-3">Join our newsletter now</h4>
+                        <ul>
+                            <li class="text my-2">Receive email updates about our latest <br> store openings and special offers.
+                            </li>
+                        </ul>
+                        <div class="input-section mt-5">
+                            <input type="text" placeholder="Email">
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 useful-links">
+                    <div class="card my-4">
+                        <h4 class="heading my-3">Useful links</h4>
+                        <ul>
+                            <li class="text my-1">About Us</li>
+                            <li class="text my-1">About our store</li>
+                            <li class="text my-1">Safe shopping</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
